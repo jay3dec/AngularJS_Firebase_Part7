@@ -25,9 +25,8 @@ $scope.login=login;
 	
 
 	fb.$push({ title: title,post: post,emailId: user,'.priority': user}).then(function(ref) {
-	//	login.loading = false;
-  		console.log(ref); 
-		//$location.path('/welcome');
+		login.loading = false;
+		$location.path('/welcome');
 	}, function(error) {
 		login.loading = false;
   		console.log("Error:", error);

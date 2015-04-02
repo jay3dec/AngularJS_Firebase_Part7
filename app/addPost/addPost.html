@@ -10,8 +10,8 @@
     <link href="blog.css" rel="stylesheet">
 
     <script type="text/javascript" src="spin.min.js"></script>
-		 <script type="text/javascript" src="ladda.js"></script>
-		 <link rel="stylesheet" type="text/css" href="style.css">
+		 <script type="text/javascript" src="ladda.min.js"></script>
+		 <link rel="stylesheet" type="text/css" href="ladda-themeless.min.css">
     
   </head>
 
@@ -55,7 +55,11 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton"></label>
   <div class="col-md-4">
-    <input id="singlebutton" ladda-loading="login.loading" data-style="expand-right" ng-disabled="!article.title || !article.post" name="singlebutton" class="btn btn-primary segoe-ui-light ladda-button" type="submit" value="Publish" />
+   
+
+
+<button ladda-loading="login.loading" data-style="expand-right" ng-disabled="!article.title || !article.post" name="singlebutton" class="btn btn-primary segoe-ui-light ladda-button" type="submit"><span class="ladda-label">Publish</span></button>
+
   </div>
 </div>
 

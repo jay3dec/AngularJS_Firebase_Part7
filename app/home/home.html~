@@ -10,7 +10,7 @@
     <link href="justified-nav.css" rel="stylesheet">
      <script type="text/javascript" src="spin.min.js"></script>
 		 <script type="text/javascript" src="ladda.js"></script>
-		 <link rel="stylesheet" type="text/css" href="style.css">
+		 <link rel="stylesheet" type="text/css" href="ladda-themeless.min.css">
     
   </head>
 
@@ -34,7 +34,7 @@
         <label class="checkbox">
           <a href="#/register"> Sign Up</a>
         </label>
-        <button data-ladda-loading="login.loading" data-style="expand-right" ng-disabled="!user.email || !user.password" type="button" ng-click="SignIn($event)" class="btn btn-lg segoe-ui-light ladda-button btn-primary btn-block"><span class="ladda-label">Sign In</span></button>
+        <button ladda-loading="login.loading" data-style="expand-right" ng-disabled="!user.email || !user.password" type="button" ng-click="SignIn($event)" class="btn btn-lg segoe-ui-light ladda-button btn-primary btn-block"><span class="ladda-label">Sign In</span></button>
 
 
 	
